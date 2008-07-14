@@ -5,8 +5,9 @@ Release:	1
 License:	GPL
 Group:		Libraries
 URL:		http://www.coyotegulch.com/products/libcoyotl/index.html
-BuildRequires:	libcoyotl-devel = 3.1.0
+BuildRequires:	http://www.coyotegulch.com/distfiles/libcoyotl-devel = 3.1.0
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	7fdc1ac67528c819cdaf9091eeee3833
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
