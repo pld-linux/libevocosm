@@ -1,12 +1,13 @@
 Summary:	A C++ Framework for Evolutionary Computing
 Name:		libevocosm
 Version:	3.3.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		Libraries
 URL:		http://www.coyotegulch.com/products/libcoyotl/index.html
 Source0:	http://www.coyotegulch.com/distfiles/%{name}-%{version}.tar.gz
 # Source0-md5:	9975e9375aaf6a9365f62ceca58518ea
+Patch0:		missing-unistd-include.patch
 BuildRequires:	libbrahe-devel
 BuildRequires:	libcoyotl-devel = 3.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,6 +34,7 @@ libevocosm static libraries.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 %configure

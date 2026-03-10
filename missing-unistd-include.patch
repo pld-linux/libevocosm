@@ -1,0 +1,12 @@
+--- libevocosm-3.3.1/libevocosm/evocommon.h.orig	2008-04-09 16:45:17.000000000 +0200
++++ libevocosm-3.3.1/libevocosm/evocommon.h	2026-03-10 13:48:00.000000000 +0100
+@@ -47,6 +47,9 @@
+ #include <iostream>
+ #include <iomanip>
+ 
++#if !defined(_MSC_VER)
++#include <unistd.h>
++#endif
+ // Windows
+ #if defined(_MSC_VER)
+ #include "windows.h"
