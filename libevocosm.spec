@@ -1,7 +1,7 @@
 Summary:	A C++ Framework for Evolutionary Computing
 Name:		libevocosm
 Version:	3.3.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries
 URL:		http://www.coyotegulch.com/products/libcoyotl/index.html
